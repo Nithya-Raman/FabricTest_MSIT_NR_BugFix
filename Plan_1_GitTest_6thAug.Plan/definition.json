@@ -1,0 +1,41 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/plan/definition/Definition/1.0.0/schema.json",
+  "cube": {
+    "partitionRefIds": []
+  },
+  "semanticModelReference": {
+    "artifactId": 6616454,
+    "connectionId": "5185df7f-aeb6-44a0-9d2a-09e18864be8f",
+    "datasetRelations": [
+      {
+        "dependentArtifactId": 6616454,
+        "settings": "Association"
+      }
+    ],
+    "directLakeMode": false,
+    "directQueryMode": false,
+    "recordGuid": "019fd53d-72c9-751d-a804-37b467ca602f",
+    "semanticModelId": "6bd22c9d-d2e4-4fa5-b1bc-00cbd4f6aefc",
+    "semanticModelName": "EPM Test",
+    "semanticModelWorkspaceId": "9b7a019b-ef10-4a46-a267-1f712ec26a95",
+    "semanticModelWorkspaceName": "msit-alm-source-planning",
+    "sourceType": "WORKLOAD",
+    "url": "https://app.powerbi.com/groups/9b7a019b-ef10-4a46-a267-1f712ec26a95/datasets/6bd22c9d-d2e4-4fa5-b1bc-00cbd4f6aefc"
+  },
+  "sheets": [
+    {
+      "displayName": "Planning 1",
+      "isHidden": false,
+      "recordGuid": "019fd53d-ded5-77d5-93df-ba9b70a36e3e",
+      "sheetType": "PLANNING",
+      "workloadItemEntityVisuals": [
+        {
+          "isEmbedded": false,
+          "visualId": "019fd53d-e856-7109-9875-8ce1205d5977",
+          "visualType": "PLANNING"
+        }
+      ]
+    }
+  ],
+  "workloadItemName": "Plan_1_GitTest_6thAug"
+}
