@@ -17,6 +17,8 @@ CREATE TABLE [8d460465-ab53-431f-a27a-8d928a8e1f6c].[visual_di_1_0242499cb492e83
     [measure_1_meta]                                                  NVARCHAR (255)   NULL,
     [measure_2]                                                       DECIMAL (30, 10) NULL,
     [measure_2_meta]                                                  NVARCHAR (255)   NULL,
+    [measure_3]                                                       DECIMAL (30, 10) NULL,
+    [measure_3_meta]                                                  NVARCHAR (255)   NULL,
     PRIMARY KEY CLUSTERED ([id] ASC),
     UNIQUE NONCLUSTERED ([rowId] ASC, [colId] ASC, [scenarioId] ASC, [filterContextHash] ASC)
 );
