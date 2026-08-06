@@ -58,6 +58,61 @@
       "sidecarHydrationStatus": 10,
       "status": 10,
       "visualId": "019fd53d-e856-7109-9875-8ce1205d5977"
+    },
+    {
+      "boundToFilterContext": 10,
+      "columnMeta": {
+        "data_type": "Number",
+        "description": "",
+        "id": "13226004463064811575",
+        "label": "Forecast",
+        "measure_type": {
+          "Forecast": {
+            "auto_close_forecast_settings": null,
+            "bound_to_filter_context": true,
+            "closed_period_config": {
+              "method": {
+                "LinkToMeasure": "2759107058914755561"
+              }
+            },
+            "closed_period_till": null,
+            "disable_write_access": false,
+            "edit_config": {
+              "aggregate_total": null,
+              "allow_input": "ReadAndEdit",
+              "number_column_metadata": {
+                "default_value": null,
+                "distribute_parent_value_to_children": true,
+                "max_value": null,
+                "min_value": null
+              },
+              "on_change_formula": null
+            },
+            "forecast_allowed_user_permissions": true,
+            "forecast_period": {
+              "end": "2026-12-31T00:00:00.000Z",
+              "end_utc": 1798741799,
+              "start": "2026-01-01T00:00:00.000Z",
+              "start_utc": 1767205800
+            },
+            "forecast_value_display": "Actual",
+            "forecast_version": 1,
+            "open_period_config": {
+              "method": {
+                "DataInput": "Blank"
+              }
+            }
+          }
+        }
+      },
+      "dataInputType": 6,
+      "description": null,
+      "measureGuid": "13226004463064811575",
+      "name": "Forecast",
+      "sidecarHydrationLeaseAt": null,
+      "sidecarHydrationStatus": 10,
+      "status": 10,
+      "visualId": "019fd53d-e856-7109-9875-8ce1205d5977"
     }
   ]
 }

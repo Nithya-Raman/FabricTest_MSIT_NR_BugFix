@@ -2,10 +2,13 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/plan/definition/Planning/Properties/1.0.0/schema.json",
   "properties": {
     "advanceLookup": [],
+    "chartType": "COLUMN_VERTICAL",
     "dimension": {
       "height": 0.49,
       "width": 0.99
     },
+    "groupMeasureAssignments": [],
+    "groupName": "",
     "layerProperties": {
       "layerProperties": {
         "groupIds": [],
@@ -14,6 +17,9 @@
       },
       "order": 0
     },
+    "lockAspectRatio": false,
+    "mobileProperties": {},
+    "originEntityId": "1",
     "pivotAssignments": [
       {
         "bucketId": "rows",
@@ -186,6 +192,9 @@
       "x": 0.005,
       "y": 0.005
     },
+    "preVisualId": "1",
+    "shapeType": "RECTANGLE",
+    "sortingConfig": [],
     "splitByCategory": {
       "pivotValueAssignments": [],
       "splitByCategoryAssignments": [],
@@ -872,10 +881,20 @@
         "position": "RIGHT"
       }
     ],
+    "transformMeasure": "none",
+    "visualInteractions": {},
     "visualState": {
       "aggregation_config": {
         "measure_aggregation": {
           "13004225071892291378": {
+            "column": "Sum",
+            "row": "Sum"
+          },
+          "13226004463064811575": {
+            "column": "Sum",
+            "row": "Sum"
+          },
+          "2759107058914755561": {
             "column": "Sum",
             "row": "Sum"
           }
@@ -964,6 +983,29 @@
         "filterContextHashMap": {},
         "filterContextJson": {}
       },
+      "formatConfig": {
+        "__lastHouseKeepedSize": 0,
+        "cell": {},
+        "column": {
+          "12326626748811915379": [
+            {
+              "format": {
+                "5": "#FFFF00"
+              },
+              "order": 0
+            }
+          ]
+        },
+        "columnDimension": {},
+        "columnHierarchy": {},
+        "formatSize": 1,
+        "labelCellGroup": {},
+        "measure": {},
+        "row": {},
+        "rowDimension": {},
+        "rowGroup": {},
+        "rowMemberInDimension": {}
+      },
       "locale": "en-US",
       "manage_measures": [
         {
@@ -977,6 +1019,12 @@
           "label": "Number",
           "order": 1,
           "visible": true
+        },
+        {
+          "id": "13226004463064811575",
+          "label": "Forecast",
+          "order": 2,
+          "visible": true
         }
       ],
       "ranking_config": {
@@ -986,6 +1034,182 @@
         "show_category_suffix": false,
         "show_others": true
       },
+      "readViewConfig": {
+        "advanced": {
+          "bulkEdit": false,
+          "cells": false,
+          "column": false,
+          "compare": false,
+          "dataInput": false,
+          "forecast": false,
+          "goalSeek": false,
+          "measure": false,
+          "monitor": true,
+          "pagelayout": false,
+          "rows": false,
+          "scenario": false,
+          "simulate": false,
+          "variables": false
+        },
+        "advancedTabMenu": {
+          "rowColumnConfig": true
+        },
+        "buttonVariablesFloatingView": {
+          "showOnReadMode": true,
+          "variables": {}
+        },
+        "compareScenario": {},
+        "dataEntry": {
+          "action": false,
+          "audit": false,
+          "column": false,
+          "comment": false,
+          "display": false,
+          "scenario": false
+        },
+        "enterprise": {
+          "breaks": true,
+          "layout": true,
+          "reportPlus": true,
+          "schedule": true,
+          "table": true,
+          "writeBack": true
+        },
+        "export": {
+          "copyToClipboard": true,
+          "excel": true,
+          "pdf": true,
+          "schedule": true,
+          "visual": true,
+          "writeBack": false
+        },
+        "fabricFormat": {
+          "action": true,
+          "alignment": true,
+          "font": true,
+          "format_style": true,
+          "general": false,
+          "style": true
+        },
+        "fabricHeaderFooter": {
+          "actions": false,
+          "add": false,
+          "cell": false,
+          "insert": false,
+          "layout": false,
+          "preset": false,
+          "variables": false,
+          "view": false
+        },
+        "fabricHome": {
+          "action": true,
+          "analyze": true,
+          "column": false,
+          "layout": true,
+          "number": true,
+          "plan": true,
+          "row": false
+        },
+        "fabricInfoBridge": {
+          "configure": false,
+          "export": false,
+          "import": false
+        },
+        "fabricInput": {
+          "controls": true,
+          "scenario": true,
+          "snapshots": true,
+          "tools": true,
+          "workflows": true
+        },
+        "fabricModelBuilder": {
+          "actions": false,
+          "config": false,
+          "data": false,
+          "insert": false
+        },
+        "fabricPlan": {
+          "audit": true,
+          "controls": false,
+          "scenario": true,
+          "snapshot": false,
+          "time": true,
+          "tools": true,
+          "workflows": true
+        },
+        "fabricScenario": {
+          "actions": true,
+          "scenario": true,
+          "tools": true,
+          "writeback": true
+        },
+        "fabricSettings": {
+          "display": false,
+          "global": false,
+          "hierarchy": false,
+          "measure": false,
+          "number": false,
+          "portal": false
+        },
+        "fabricWriteback": {
+          "writeback": true
+        },
+        "forecast": {
+          "actions": false,
+          "analyze": false,
+          "annotate": false,
+          "insert": false,
+          "measure": false,
+          "measures": false,
+          "openPeriods": false,
+          "rows": false,
+          "style": false
+        },
+        "home": {
+          "alignment": true,
+          "analyze": true,
+          "chart": true,
+          "editing": true,
+          "manage": true,
+          "model": true,
+          "navigation": true,
+          "notes": true,
+          "number": true,
+          "setup": true,
+          "style": true
+        },
+        "indicator": {
+          "edit": false,
+          "header": true,
+          "row": false,
+          "row_label": false
+        },
+        "infoBridge": {
+          "configure": false,
+          "export": false,
+          "import": false
+        },
+        "scenario": {
+          "actions": true,
+          "analyze": true,
+          "annotate": true,
+          "export": true,
+          "modifiedByUser": false,
+          "monitor": true,
+          "scenario": true,
+          "writeBack": false
+        },
+        "snapshot": {
+          "analyze": true,
+          "compare": true,
+          "export": true
+        }
+      },
+      "recentColors": [
+        "#FFFF00",
+        "#377D22",
+        "#A60000"
+      ],
       "rowDimensions": [
         {
           "externalKey": "[DimProduct[[H] Product Hierarchy]]~||~DimProduct[ClassName]",
@@ -1012,6 +1236,16 @@
           "label": "ProductSubcategoryName"
         }
       ],
+      "scenarioSettings": {
+        "compareScenarioProps": {
+          "selectedMeasure": "",
+          "selectedScenarios": []
+        },
+        "defaultScenario": null,
+        "showAllScenarios": false,
+        "showScenarioTabs": true
+      },
+      "simulationContext": {},
       "toolbar": {
         "currentTab": "",
         "enableHoverToolbar": false,
@@ -1025,7 +1259,15 @@
         "showMinimalView": true,
         "showOnHover": false,
         "showTabContent": true,
+        "summaryTab": "simulation",
         "toolbarTheme": "light"
+      },
+      "totals_config": {
+        "column_grand_total": "Left",
+        "column_sub_total": null,
+        "freeze_total": false,
+        "row_grand_total": "Top",
+        "row_sub_total": "Top"
       },
       "visualStyles": {
         "background": {
